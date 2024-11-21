@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Book Store</title>
+    <style>
+        /* Reset some default browser styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #F5F5F5;
+            color: #333;
+        }
+
+        /* Header and Navigation */
+        header {
+            background-color: #556B2F;
+            color: #fff;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header img {
+            height: 100px;
+        }
+
+        .marquee {
+            background-color: #FFD700;
+            color: #006400;
+            font-size: 2rem;
+            font-family: 'Brush Script MT', cursive;
+            padding: 10px;
+            width: 100%;
+            text-align: center;
+            animation: marquee 10s linear infinite;
+        }
+
+        @keyframes marquee {
+            from {
+                transform: translateX(100%);
+            }
+
+            to {
+                transform: translateX(-100%);
+            }
+        }
+
+        nav {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        nav a {
+            text-decoration: none;
+            font-size: 1.5rem;
+            color: #2F4F4F;
+            margin: 0 20px;
+            padding: 10px 20px;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #2F4F4F;
+            color: white;
+            border-radius: 5px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #556B2F;
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        /* Responsive Media Query */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+
+            header img {
+                height: 80px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <img src="images/logo1.png" alt="Logo">
+        <div class="marquee">Online Book Store</div>
+        <img src="images/cse.png" alt="CSE Logo">
+    </header>
+
+    <!-- Navigation Section -->
+    <nav>
+        <a href="Home.html" target="_parent">Home</a>
+        <a href="login.html" target="rightframe">Login</a>
+        <a href="registration.html" target="rightframe">Register</a>
+        <a href="catalogue.html" target="rightframe">Catalogue</a>
+    </nav>
+
+    <!-- Footer Section -->
+    <footer>
+        Created & Maintained by ABESIT
+    </footer>
+
+</body>
+
+</html>
